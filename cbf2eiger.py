@@ -175,8 +175,9 @@ if __name__ == "__main__":
 
     import glob
     import re
-    mylist=glob.glob("*cbf")
-    r=re.compile("^[a-zA-Z0-9].*0...cbf")
-    input_files=sorted(list(filter(r.match, mylist)))
+#    mylist=glob.glob("*cbf")
+#    r=re.compile("^[a-zA-Z0-9].*0...cbf")
+#    input_files=sorted(list(filter(r.match, mylist)))
+    input_files=glob.glob("*cbf")
     input_files.sort()
     save_eiger(input_files, opts.output, filter_=opts.filter, nbthreads=opts.nbthreads)
