@@ -10,7 +10,6 @@ git clone https://github.com/pgasparo/cbf2h5
 cd cbf2h5
 conda env create -f environment.yml
 conda activate cbf2h5
-pip install fabio
 ```
 
 ## Usage
